@@ -14,6 +14,9 @@ export default function Navbar() {
                 <li>
                     <Link to="/users">Users</Link>
                 </li>
+                <li>
+                    <Link to="/topics">Topics</Link>
+                </li>
             </ul>
         </nav>
     );

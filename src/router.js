@@ -3,11 +3,11 @@ import {
     BrowserRouter,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
-import Home from "./routes/home";
-import About from "./routes/about";
-import Users from "./routes/users";
+import Home from "./views/home";
+import About from "./views/about";
+import Users from "./views/users";
+import Topics from "./views/topics";
 import Navbar from "./components/navbar";
 
 export default function Router() {
@@ -27,9 +27,11 @@ export default function Router() {
                     <Route path="/edgexl">
                         <Home />
                     </Route>
+                    <Route path="/topics">
+                        <Topics />
+                    </Route>
                 </Switch>
             </div>
         </BrowserRouter>
     );
 }
-
